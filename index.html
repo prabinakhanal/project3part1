@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <div>
+        <div id="clickmodal" class="h-screen flex justify-center items-center  min-h-screen bg-[#DDD6FE]">
+            <button type="button" id="open"
+                class="absolute  flex items-center  justify-center  gap-2  font-outfit font-normal text-lg text-[#ffffff] leading-6 rounded-lg bg-[#7C3AED] h-16 w-72">
+                <img src="./image/icon.svg" alt="no image">Click To Open Model</button>
+        </div>
+    </div>
+
+
+
+    <div id="modal" class="hidden justify-center items-center h-screen flex bg-[#000000]">
+        <div
+            class=" absolute  bg-[#ffffff] inset-0 flex items-center justify-center fixed w-3/5 h-4/6 top-0 left-0 mt-40 ml-96 box-content rounded-lg ">
+
+            <div class="">
+                <img src="./image/cross.svg" alt="no image" id="cross"
+                    class="absolute -top-12 -right-0 bg-[#000000] h-8 w-8 rounded-full">
+            </div>
+
+
+            <div class=" items-center justify-center flex flex-col">
+                <h1 class="absolute font-outfit font-medium text-2xl text-[#000000]">Modal Appears Here</h1>
+
+
+
+                <button type="button" id="close"
+                    class="flex-none absolute mt-32 box-border rounded-lg px-8 py-3 gap-2 bg-[#FFE4E6] border border-solid
+                    border-[#FECDD3] text-lg text-[#9F1239] font-outfit font-medium items-center justify-center order-none grow-0">Close
+                    Modal</button>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <script src="modal.js"></script>
+</body>
+
+</html>
