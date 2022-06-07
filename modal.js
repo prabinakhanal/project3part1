@@ -33,6 +33,6 @@ modal.addEventListener('click',()=>{
 })
 white.addEventListener('click',(e)=>{
 e.stopPropagation();
-alert('cant go back');
+
 })
 
